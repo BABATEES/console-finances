@@ -139,3 +139,4 @@ var minMonth = finances[indexMin][0]
 console.log(changes) 
 
 console.log("Greatest Increase in Profits:" + maxMonth + " ($" + greatestIncrease + ")");
+console.log("Greatest Decrease in profits:" + minMonth + " ($" + greatestDecrease + ")");
