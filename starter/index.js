@@ -91,6 +91,7 @@ console.log("Financial Analysis");
 console.log("------------------------");
 
 // The total number of months included in the dataset.
+console.log("Total Months:" + finances.length);
 // figure out how many rows there are in the finances variable
 // The net total amount of Profit/Losses over the entire period.
 // add everything together
@@ -105,5 +106,3 @@ console.log("------------------------");
 //   check the last increase. If it's bigger than 0, keep track of the new biggest one.
 //   in a loop
 // The greatest decrease in losses (date and amount) over the entire period.
-// console output format!
-// Financial Analysis
