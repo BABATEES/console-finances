@@ -126,3 +126,16 @@ console.log("Average change: $" + (totalchangeamount/(finances.length-1)).toFixe
 //   check the last increase. If it's bigger than 0, keep track of the new biggest one.
 //   in a loop
 // The greatest decrease in losses (date and amount) over the entire period.
+
+var greatestIncrease = Math.max(...changes);
+var greatestDecrease = Math.min(...changes);
+
+var indexMax = changes.indexOf(greatestIncrease) + 1;
+var indexMin = changes.indexOf(greatestDecrease) + 1;
+
+var maxMonth = finances[indexMax][0]
+var minMonth = finances[indexMin][0]
+
+console.log(changes) 
+
+console.log("Greatest Increase in Profits:" + maxMonth + " ($" + greatestIncrease + ")");
