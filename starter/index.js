@@ -1,6 +1,6 @@
 var finances = [
-['Jan-2010', 867884],
-['Feb-2010', 984655],
+['Jan-2010', 867884], // finances[0-row][0-column]
+['Feb-2010', 984655], // finances[1][0]
 ['Mar-2010', 322013],
 ['Apr-2010', -69417],
 ['May-2010', 310503],
@@ -96,6 +96,24 @@ console.log("Total Months:" + finances.length);
 // The net total amount of Profit/Losses over the entire period.
 // add everything together
 // probably a loop
+var nettotalamount = 0;
+var totalchangeamount = 0;
+
+var changes = [];
+
+for (i= 0; i < finances.length; i++)
+ {nettotalamount += finances[i][1];
+  if (i !=0){
+// change work out shown below
+   var currentchange = finances [i][1] - finances[i-1][1];
+
+   changes.push(currentchange);
+   totalchangeamount += currentchange;
+  }
+}
+
+console.log("Total: $" + nettotalamount);
+
 // The average of the changes in Profit/Losses over the entire period.
 // calculate each change by subtracting the previous month from this month
 // You will need to track what the total change in profits is from month to month and then find the average.
