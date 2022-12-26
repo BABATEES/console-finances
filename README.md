@@ -15,7 +15,7 @@ EDX Bootcamp
 Please refer to the license in the repo
 
 ## Website link
-https://babatees.github.io/console-finances
+https://babatees.github.io/console-finances/
 
 ## Screenshot
 Image\Webpage-screenshot.png
