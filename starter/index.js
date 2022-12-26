@@ -119,6 +119,8 @@ console.log("Total: $" + nettotalamount);
 // You will need to track what the total change in profits is from month to month and then find the average.
 // (Total/total number of changes) ===> total change/(months - 1)
 // maybe put all the changes into an array? using .push(...) ?
+
+console.log("Average change: $" + (totalchangeamount/(finances.length-1)).toFixed(2));
 // The greatest increase in profits (date and amount) over the entire period.
 // start with 0
 //   check the last increase. If it's bigger than 0, keep track of the new biggest one.
