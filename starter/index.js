@@ -87,6 +87,9 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
+console.log("Financial Analysis");
+console.log("------------------------");
+
 // The total number of months included in the dataset.
 // figure out how many rows there are in the finances variable
 // The net total amount of Profit/Losses over the entire period.
